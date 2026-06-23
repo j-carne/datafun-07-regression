@@ -187,3 +187,5 @@ __pycache__/
 # ALT: Comment if logs must be inspected or validated.
 # *.log
 logs/
+
+data/raw/dynon_data.csv

@@ -178,3 +178,7 @@ packages = ["src/datafun"]  # REQ.PACKAGES: Discovery rooted at src/.
 source = "vcs"
 fallback-version = "0.1.0"              # Used when no git tags present (fresh clone, CI).
 tag-pattern = "^(?:v)?(?P<version>\\d+\\.\\d+\\.\\d+)$"
+
+[project.urls]
+Repository = "https://github.com/j-carne/datafun-07-regression"
+Homepage = "https://github.com/j-carne/datafun-07-regression"

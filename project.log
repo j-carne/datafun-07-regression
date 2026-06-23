@@ -223,3 +223,119 @@ write down what you conclude.
 2026-06-22 20:33:54 | INFO | P07-NB | ========================
 2026-06-22 20:33:54 | INFO | P07-NB | Executed successfully!
 2026-06-22 20:33:54 | INFO | P07-NB | ========================
+2026-06-22 20:50:33 | INFO | P07 | === RUN START ===
+2026-06-22 20:50:33 | INFO | P07 | project=P07
+2026-06-22 20:50:33 | INFO | P07 | repo_dir=datafun-07-regression
+2026-06-22 20:50:33 | INFO | P07 | python=3.14.5
+2026-06-22 20:50:33 | INFO | P07 | os=Windows 11
+2026-06-22 20:50:33 | INFO | P07 | shell=powershell
+2026-06-22 20:50:33 | INFO | P07 | cwd=notebooks
+2026-06-22 20:50:33 | INFO | P07 | github_actions=False
+2026-06-22 20:50:33 | INFO | P07 | Imports complete.
+2026-06-22 20:50:33 | INFO | P07 | Loading dataset: dynon_data
+2026-06-22 20:50:33 | INFO | P07 | Loaded: 14131 rows, 10 columns
+2026-06-22 20:50:33 | INFO | P07 | Creating modeling view (dropping rows missing feature or target)
+2026-06-22 20:50:33 | INFO | P07 | Original rows: 14131
+2026-06-22 20:50:33 | INFO | P07 | Model rows:    14122
+2026-06-22 20:50:33 | INFO | P07 | Rows dropped:  9
+2026-06-22 20:50:33 | INFO | P07 | Building feature matrix X and target vector y
+2026-06-22 20:50:33 | DEBUG | P07 | X shape: (14122, 1)  (rows, features)
+2026-06-22 20:50:33 | DEBUG | P07 | y shape: (14122,)  (rows,)
+2026-06-22 20:50:33 | INFO | P07 | Fitting a linear regression (scikit-learn)
+2026-06-22 20:50:33 | INFO | P07 | Slope:     0.198528
+2026-06-22 20:50:33 | INFO | P07 | Intercept: 20.015801
+2026-06-22 20:50:33 | INFO | P07 | Fitted line: avg_cht = 0.19853 * avg_egt + 20.016
+2026-06-22 20:50:33 | INFO | P07 | Computing fitted values for every observed row
+2026-06-22 20:50:33 | INFO | P07 | Example prediction: avg_egt=700 -> avg_cht=159.0
+2026-06-22 20:50:33 | INFO | P07 | Computing residuals (actual - fitted)
+2026-06-22 20:50:33 | INFO | P07 | R-squared: 0.5415
+2026-06-22 20:50:33 | INFO | P07 | RMSE:      24.0930
+2026-06-22 20:50:33 | INFO | P07 | ---- Creating Scatter Plot with Fitted Line ----------
+2026-06-22 20:50:34 | INFO | P07 | ------ Creating Residual Plot --------------------------
+2026-06-22 20:50:34 | INFO | P07 | ========================
+2026-06-22 20:50:34 | INFO | P07 | SUMMARY
+2026-06-22 20:50:34 | INFO | P07 | ========================
+2026-06-22 20:50:34 | INFO | P07 | Dataset: dynon_data
+2026-06-22 20:50:34 | INFO | P07 | Feature (x): avg_egt
+2026-06-22 20:50:34 | INFO | P07 | Target  (y): avg_cht
+2026-06-22 20:50:34 | INFO | P07 | Original rows: 14131
+2026-06-22 20:50:34 | INFO | P07 | Model rows:    14122
+2026-06-22 20:50:34 | INFO | P07 | Fitted line:
+2026-06-22 20:50:34 | INFO | P07 |   avg_cht = 0.19853 * avg_egt + 20.016
+2026-06-22 20:50:34 | INFO | P07 | R-squared: 0.5415
+2026-06-22 20:50:34 | INFO | P07 | RMSE:      24.0930
+2026-06-22 20:50:34 | INFO | P07 | ======================
+2026-06-22 20:50:34 | INFO | P07 | Review the fit numbers (R-squared, RMSE).
+2026-06-22 20:50:34 | INFO | P07 | Look at the fitted-line plot and the residual plot.
+2026-06-22 20:50:34 | INFO | P07 | Decide if a straight line is a fair description.
+2026-06-22 20:50:34 | INFO | P07 | ======================
+2026-06-22 20:50:34 | INFO | P07 | EDA workflow complete
+2026-06-22 20:50:34 | INFO | P07 | ========================
+2026-06-22 20:50:34 | INFO | P07 | Executed successfully!
+2026-06-22 20:50:34 | INFO | P07 | ========================
+2026-06-22 20:54:46 | INFO | P07 | === RUN START ===
+2026-06-22 20:54:46 | INFO | P07 | project=P07
+2026-06-22 20:54:46 | INFO | P07 | repo_dir=datafun-07-regression
+2026-06-22 20:54:46 | INFO | P07 | python=3.14.5
+2026-06-22 20:54:46 | INFO | P07 | os=Windows 11
+2026-06-22 20:54:46 | INFO | P07 | shell=powershell
+2026-06-22 20:54:46 | INFO | P07 | cwd=.
+2026-06-22 20:54:46 | INFO | P07 | github_actions=False
+2026-06-22 20:54:46 | INFO | P07 | Imports complete.
+2026-06-22 20:54:46 | INFO | P07 | Loading dataset: dynon_data
+2026-06-22 21:01:07 | INFO | P07 | === RUN START ===
+2026-06-22 21:01:07 | INFO | P07 | project=P07
+2026-06-22 21:01:07 | INFO | P07 | repo_dir=datafun-07-regression
+2026-06-22 21:01:07 | INFO | P07 | python=3.14.5
+2026-06-22 21:01:07 | INFO | P07 | os=Windows 11
+2026-06-22 21:01:07 | INFO | P07 | shell=powershell
+2026-06-22 21:01:07 | INFO | P07 | cwd=notebooks
+2026-06-22 21:01:07 | INFO | P07 | github_actions=False
+2026-06-22 21:01:07 | INFO | P07 | Imports complete.
+2026-06-22 21:01:07 | INFO | P07 | Loading dataset: dynon_data
+2026-06-22 21:01:07 | INFO | P07 | Loaded: 14131 rows, 6 columns
+2026-06-22 21:01:07 | INFO | P07 | Creating modeling view (dropping rows missing feature or target)
+2026-06-22 21:01:07 | INFO | P07 | Original rows: 14131
+2026-06-22 21:01:07 | INFO | P07 | Model rows:    14122
+2026-06-22 21:01:07 | INFO | P07 | Rows dropped:  9
+2026-06-22 21:01:07 | INFO | P07 | Building feature matrix X and target vector y
+2026-06-22 21:01:07 | DEBUG | P07 | X shape: (14122, 1)  (rows, features)
+2026-06-22 21:01:07 | DEBUG | P07 | y shape: (14122,)  (rows,)
+2026-06-22 21:01:07 | INFO | P07 | Fitting a linear regression (scikit-learn)
+2026-06-22 21:01:07 | INFO | P07 | Slope:     0.151141
+2026-06-22 21:01:07 | INFO | P07 | Intercept: 332.787118
+2026-06-22 21:01:07 | INFO | P07 | Fitted line: avg_egt = 0.15114 * rpm_l + 332.787
+2026-06-22 21:01:07 | INFO | P07 | Computing fitted values for every observed row
+2026-06-22 21:01:07 | INFO | P07 | Example prediction: rpm=2400 -> avg_egt=695.5 deg C
+2026-06-22 21:01:07 | INFO | P07 | Computing residuals (actual - fitted)
+2026-06-22 21:01:07 | INFO | P07 | R-squared: 0.6850
+2026-06-22 21:01:07 | INFO | P07 | RMSE:      74.0172
+2026-06-22 21:01:07 | INFO | P07 | ---- Creating Scatter Plot with Fitted Line ----------
+2026-06-22 21:01:07 | INFO | P07 | ----   Set x to RPM (left engine) -----------------------
+2026-06-22 21:01:07 | INFO | P07 | ----   Set y to Average EGT (deg C) -------------------------
+2026-06-22 21:01:08 | INFO | P07 | ------ Creating Residual Plot --------------------------
+2026-06-22 21:01:08 | INFO | P07 | ------   Set x to RPM (left engine) ----------------------
+2026-06-22 21:01:08 | INFO | P07 | ------   Set y to the residual (actual - fitted) -------
+2026-06-22 21:01:08 | INFO | P07 | ========================
+2026-06-22 21:01:08 | INFO | P07 | SUMMARY
+2026-06-22 21:01:08 | INFO | P07 | ========================
+2026-06-22 21:01:08 | INFO | P07 | Dataset: dynon_data
+2026-06-22 21:01:08 | INFO | P07 | Feature (x): rpm_l
+2026-06-22 21:01:08 | INFO | P07 | Target  (y): avg_egt
+2026-06-22 21:01:08 | INFO | P07 | Original rows: 14131
+2026-06-22 21:01:08 | INFO | P07 | Model rows:    14122
+2026-06-22 21:01:08 | INFO | P07 | Fitted line:
+2026-06-22 21:01:08 | INFO | P07 |   avg_egt = 0.15114 * rpm_l + 332.787
+2026-06-22 21:01:08 | INFO | P07 | R-squared: 0.6850
+2026-06-22 21:01:08 | INFO | P07 | RMSE:      74.0172
+2026-06-22 21:01:08 | INFO | P07 | ======================
+2026-06-22 21:01:08 | INFO | P07 | Review the fit numbers (R-squared, RMSE).
+2026-06-22 21:01:08 | INFO | P07 | Look at the fitted-line plot and the residual plot.
+2026-06-22 21:01:08 | INFO | P07 | Decide if a straight line is a fair description.
+2026-06-22 21:01:08 | INFO | P07 | If the residuals show a pattern, a straight line is not -
+2026-06-22 21:01:08 | INFO | P07 | and that is a real finding worth reporting.
+2026-06-22 21:01:08 | INFO | P07 | ======================
+2026-06-22 21:01:08 | INFO | P07 | EDA workflow complete
+2026-06-22 21:01:08 | INFO | P07 | ========================
+2026-06-22 21:01:08 | INFO | P07 | Executed successfully!
+2026-06-22 21:01:08 | INFO | P07 | ========================

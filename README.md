@@ -168,67 +168,6 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 | INFO | P07 | ========================
 ```
 
-## Findings and Visuals
-
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
-
-In your custom project, discuss these examples, but
-
-- your figures and narrative should reflect your work,
-- this `README.md` should include your commands, process, and visuals, and
-- `docs/index.md` should include your narrative.
-
-Remove unnecessary instructional comments in your custom files.
-
-Update these figures to present interesting results from your custom project:
-
-## Penguins: Is there a linear relationship?
-
-![Provide a Useful Caption](./docs/images/Figure_1.png)
-
-![Provide a Useful Caption](./docs/images/Figure_2.png)
-
-## World Data: Is there a linear relationship? How can you improve the analysis?
-
-![Provide a Useful Caption](./docs/images/Figure_3.png)
-
-![Provide a Useful Caption](./docs/images/Figure_4.png)
-
-## Project Documentation
-
-Additional instructions, terms, and project notes:
-
-[docs/index.md](docs/index.md)
-
-## Citation
-
-[CITATION.cff](./CITATION.cff)
-
-## License
-
-[MIT](./LICENSE)
-
-## Example Output
-
-```shell
-| INFO | P07 | ========================
-| INFO | P07 | Dataset: owid-co2-data-subset
-| INFO | P07 | Feature (x): gdp
-| INFO | P07 | Target  (y): co2
-| INFO | P07 | Original rows: 350
-| INFO | P07 | Model rows:    308
-| INFO | P07 | Fitted line:
-| INFO | P07 |   co2 = 3.21582e-10 * gdp + 308.446
-| INFO | P07 | ======================
-| INFO | P07 | Executed successfully!
-| INFO | P07 | ========================
-```
-
 ## Technical Modification — Feature Changed to Population
 
 Changed `FEATURE_COL` from `"gdp"` to `"population"` (Category A — change an input/setting).
@@ -252,3 +191,43 @@ is the slightly better predictor.
 ![Fitted Line — CO2 vs GDP](./docs/images/Figure_3.png)
 
 ![Residual Plot — CO2 vs GDP](./docs/images/Figure_4.png)
+
+## Custom Project — Dynon Flight Data: Does RPM predict EGT?
+
+Applied linear regression to real Dynon avionics data from a general aviation flight.
+14,131 samples at 0.5-second intervals. Feature: RPM (left engine). Target: Average EGT across 4 cylinders.
+
+```shell
+avg_egt = 0.15114 * rpm_l + 332.787
+R-squared: 0.6850
+RMSE:      74.02
+Example prediction: rpm=2400 -> avg_egt=695.5 deg C
+```
+
+| Metric | Value |
+|--------|-------|
+| R-squared | 0.685 |
+| RMSE | 74.0°C |
+| Model rows | 14,122 |
+
+RPM explains about 69% of EGT variation — a moderate linear relationship.
+Higher RPM increases EGT as expected, but flight phase (idle, climb, cruise)
+introduces enough variation that a straight line alone doesn't fully capture the pattern.
+
+![RPM vs Average EGT — Scatter Plot](./docs/images/dynon_regression_scatter.png)
+
+![RPM vs Average EGT — Residual Plot](./docs/images/dynon_regression_residual.png)
+
+## Project Documentation
+
+Additional instructions, terms, and project notes:
+
+[docs/index.md](docs/index.md)
+
+## Citation
+
+[CITATION.cff](./CITATION.cff)
+
+## License
+
+[MIT](./LICENSE)

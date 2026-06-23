@@ -62,3 +62,23 @@ is the slightly better predictor.
 ![Fitted Line — CO2 vs GDP](./docs/images/Figure_3.png)
 
 ![Residual Plot — CO2 vs GDP](./docs/images/Figure_4.png)
+
+## Custom Project — Dynon Flight Data: Does RPM predict EGT?
+
+Applied linear regression to real Dynon avionics data recorded during a general aviation flight.
+14,131 samples at 0.5-second intervals. Feature: RPM (left engine). Target: Average EGT across 4 cylinders.
+
+```shell
+avg_egt = 0.15114 * rpm_l + 332.787
+R-squared: 0.6850
+RMSE:      74.02
+Example prediction: rpm=2400 -> avg_egt=695.5 deg C
+```
+
+RPM explains about 69% of EGT variation — a moderate linear relationship.
+Higher RPM increases EGT as expected, but flight phase (idle, climb, cruise)
+introduces enough variation that a straight line alone doesn't fully capture the pattern.
+
+![RPM vs Average EGT — Scatter Plot](./docs/images/dynon_regression_scatter.png)
+
+![RPM vs Average EGT — Residual Plot](./docs/images/dynon_regression_residual.png)
