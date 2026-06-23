@@ -212,3 +212,43 @@ Additional instructions, terms, and project notes:
 ## License
 
 [MIT](./LICENSE)
+
+## Example Output
+
+```shell
+| INFO | P07 | ========================
+| INFO | P07 | Dataset: owid-co2-data-subset
+| INFO | P07 | Feature (x): gdp
+| INFO | P07 | Target  (y): co2
+| INFO | P07 | Original rows: 350
+| INFO | P07 | Model rows:    308
+| INFO | P07 | Fitted line:
+| INFO | P07 |   co2 = 3.21582e-10 * gdp + 308.446
+| INFO | P07 | ======================
+| INFO | P07 | Executed successfully!
+| INFO | P07 | ========================
+```
+
+## Technical Modification — Feature Changed to Population
+
+Changed `FEATURE_COL` from `"gdp"` to `"population"` (Category A — change an input/setting).
+
+```shell
+co2 = 4.41798e-06 * population + 359.631
+```
+
+All 350 rows were used vs 308 with GDP since population had no missing values.
+Population correlated with CO2 at ~0.95 vs GDP at ~0.98 — both strong, but GDP
+is the slightly better predictor.
+
+## Penguins: Is there a linear relationship?
+
+![Fitted Line — Penguins](./docs/images/Figure_1.png)
+
+![Residual Plot — Penguins](./docs/images/Figure_2.png)
+
+## World Data: Is there a linear relationship? How can you improve the analysis?
+
+![Fitted Line — CO2 vs GDP](./docs/images/Figure_3.png)
+
+![Residual Plot — CO2 vs GDP](./docs/images/Figure_4.png)
